@@ -8,7 +8,7 @@ export default {
   build: {
     outDir: '../dist/renderer',
     // emptyOutDir: true,
-    assetsDir: '',         // デフォルトのアセットを使用すると、Electronパッケージの後にfile://ベースのロードに失敗するので、この点には十分注意してください。
+    assetsDir: 'public',         // デフォルトのアセットを使用すると、Electronパッケージの後にfile://ベースのロードに失敗するので、この点には十分注意してください。
     rollupOptions: {
       output: {
         format: 'cjs',     // cjs, es Electronは現在CommonJs形式のみをサポートしています。
