@@ -8,7 +8,7 @@
 		"dev": "node scripts/watch.mjs",
 		"pack": "electron-builder --dir",
 		"dist": "pnpm --prefix electron_src/ build && pnpm --prefix renderer/ deploy_build && electron-builder",
-		"dist_win": "pnpm --prefix .¥electron_src¥ build && pnpm --prefix .¥renderer¥ deploy_build && electron-builder",
+		"dist_win": "pnpm --prefix .¥electron_src¥ build_deploy && pnpm --prefix .¥renderer¥ deploy_build && electron-builder",
 		"bu": "pnpm --prefix renderer/ deploy_build",
 		"disable_start": "electron-forge start",
 		"disable_package": "electron-forge package",
