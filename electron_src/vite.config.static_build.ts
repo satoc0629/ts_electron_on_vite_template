@@ -23,27 +23,7 @@ export default {
                 'electron',
                 ...builtinModules,
             ],
-        },
-        watch: {
         }
     },
-    plugins: [
-        {
-            name: 'vite-plugin-electron-main-starter',
-            // 最初のコンパイル、リコンパイル後にトリガーされます。
-            writeBundle() {
-                if (electronProcess) {
-                    // 現在実行中のエレクトロンプログラムを終了させてからリブートする。
-                    electronProcess.kill()
-                }
-                // スタート、リスタートエレクトロン
-                electronProcess = spawn(
-                    // オフィシャルエレクトロンに相当する . 起動方法
-                    electronPath,
-                    ['../dist/main/main.cjs'],
-                    {
-                        stdio: 'inherit'
-                    })
-            },
-        }],
+    plugins: [],
 }
