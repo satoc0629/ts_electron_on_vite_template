@@ -12,7 +12,9 @@ https://zhuanlan.zhihu.com/p/377697508
 pnpm run dev
 ```
 
-## TODO
-Build Task.
+## Build Task
+```
+pnpm run dist
+```
 
 ## Please give me a star if you like.

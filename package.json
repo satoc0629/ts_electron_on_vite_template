@@ -8,10 +8,10 @@
 		"dev": "node scripts/watch.mjs",
 		"pack": "electron-builder --dir",
 		"dist": "electron-builder",
-		"start": "electron-forge start",
-		"package": "electron-forge package",
-		"make": "electron-forge make",
-		"publish": "electron-forge publish"
+		"disable_start": "electron-forge start",
+		"disable_package": "electron-forge package",
+		"disable_make": "electron-forge make",
+		"disable_publish": "electron-forge publish"
 	},
 	"build": {
 		"appId": "your.id",
