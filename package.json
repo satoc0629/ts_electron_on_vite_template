@@ -2,16 +2,48 @@
 	"name": "ts_electron_on_vite_template",
 	"version": "1.0.0",
 	"description": "",
-
+	"main": "dist/main/main.cjs",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "node scripts/watch.mjs"
+		"dev": "node scripts/watch.mjs",
+		"pack": "electron-builder --dir",
+		"dist": "electron-builder",
+		"start": "electron-forge start",
+		"package": "electron-forge package",
+		"make": "electron-forge make",
+		"publish": "electron-forge publish"
+	},
+	"build": {
+		"appId": "your.id",
+		"files": [
+			"dist"
+		],
+		"mac": {
+			"category": "your.app.category.type"
+		},
+		"win": {
+			"target": [
+				{
+					"target": "nsis",
+					"arch": [
+						"x64"
+					]
+				}
+			],
+			"artifactName": "${productName}_${version}.${ext}"
+		}
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"@electron-forge/cli": "6.0.0-beta.67",
+		"@electron-forge/publisher-github": "6.0.0-beta.67",
+		"electron": "^21.2.0",
 		"vite": "^3.1.8",
-		"electron": "^21.2.0"
+		"electron-builder": "^23.6.0"
+	},
+	"dependencies": {
+		"update-electron-app": "^2.0.1"
 	}
 }

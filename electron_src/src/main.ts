@@ -1,5 +1,7 @@
 import {app, BrowserWindow, globalShortcut} from 'electron'
 import { join } from 'path'
+// import update_electron_app from "update-electron-app";
+// update_electron_app()
 
 let win: BrowserWindow
 const createWindow = () => {

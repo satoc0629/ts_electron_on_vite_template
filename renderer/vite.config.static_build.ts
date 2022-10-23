@@ -22,8 +22,5 @@ export default {
   optimizeDeps: {
     exclude: ['electron'], // Vite に、ビルド済みの electron を除外するように指示するか、__diranme が定義されていない場合
   },
-  server: {
-    port: 3000
-  },
   plugins: [react()]
 }

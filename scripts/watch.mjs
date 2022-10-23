@@ -1,5 +1,5 @@
 import {spawn} from 'child_process'
-import {createServer, build} from 'vite'
+import {createServer} from 'vite'
 
 // ---- レンダリング処理部 ----
 const server = await createServer({configFile: 'renderer/vite.config.ts'})
