@@ -15,6 +15,9 @@
 	},
 	"build": {
 		"appId": "your.id",
+		"directories": {
+			"output": "release"
+		},
 		"files": [
 			"dist"
 		],
