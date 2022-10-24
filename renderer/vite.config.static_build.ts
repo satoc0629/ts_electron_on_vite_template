@@ -7,7 +7,7 @@ export default {
   base: './',              // index.htmlに読み込まれる静的リソースの場所；例：src=". /index.js"
   build: {
     outDir: '../dist/renderer',
-    // emptyOutDir: true,
+    emptyOutDir: true,
     assetsDir: '',         // デフォルトのアセットを使用すると、Electronパッケージの後にfile://ベースのロードに失敗するので、この点には十分注意してください。
     rollupOptions: {
       output: {
